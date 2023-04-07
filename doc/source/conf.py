@@ -34,7 +34,7 @@ copyright = "2022 Adap GmbH"
 author = "The Flower Authors"
 
 # The full version, including alpha/beta/rc tags
-release = "1.2.0"
+release = "1.4.0"
 
 
 # -- General configuration ---------------------------------------------------
@@ -77,7 +77,9 @@ redirects = {
     "quickstart_tensorflow": "quickstart-tensorflow.html",
     "release_process": "release-process.html",
     "saving-progress": "save-progress.html",
+    "writing-documentation": "write-documentation.html",
     "quickstart_scikitlearn": "quickstart-scikitlearn.html",
+    "quickstart_xgboost": "quickstart-xgboost.html",
     # Deleted pages
     "people": "index.html",
     "organizations": "index.html",
@@ -117,7 +119,7 @@ html_theme_options = {
     #     "color-brand-content": "#292F36",
     #     "color-admonition-background": "#F2B705",
     # },
-    "announcement": 'Flower Summit 2022 <a href="https://flower.dev/conf/flower-summit-2022/">watch now</a>',
+    "announcement": 'Flower Monthly: 1 March 2023 (17:00 GMT) <a href="https://flower.dev/conf/flower-monthly/">join</a>',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -148,3 +150,7 @@ nbsphinx_epilog = _open_in_colab_button
 # require.js script added by `nbsphinx`. We can only enforce this in the theme
 # itself.
 mermaid_version = ""
+
+# -- Options for MyST config  -------------------------------------
+# Enable this option to link to headers (`#`, `##`, or `###`)
+myst_heading_anchors = 3
